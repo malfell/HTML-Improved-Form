@@ -25,6 +25,14 @@
                 <label for="lastname">Your Last Name</label>
                 <span class="required-field">*</span>
                 <input type="text" minlength="2" maxlength="35" id="lastname" name="lastname" required>
+
+                <!--Added the age. The age has to be a number. I also
+                made it required because that just seemed necessary since you
+                have to be a certain age to enter the contest.-->
+                <label for="age">Your Age</label>
+                <span class="required-field">*</span>
+                <input type="number" id="age" name="age" min="21" max="120" required>
+                <h5>Must be age 21 or older to enter the contest.</h5>
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
@@ -94,7 +102,8 @@
                         <option value="WY">Wyoming</option>
                     </datalist>
                     <label for="zip">Your Zipcode</label>
-                    <input type="text" id="zip" name="zip">
+                    <!--Made zipcode only accept number values-->
+                    <input type="number" id="zip" name="zip">
                 </div>
             </fieldset>
 
