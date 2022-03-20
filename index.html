@@ -103,7 +103,14 @@
                     </datalist>
                     <label for="zip">Your Zipcode</label>
                     <!--Made zipcode only accept number values-->
-                    <input type="number" id="zip" name="zip">
+                    <!--Edited the zipcode for the bonus assignment.
+                    I changed the type attribute to "text" because "number"
+                    won't work with patterns, or at least this pattern.
+                    The zipcode will now only accept 5 digits of any number
+                    from 0-9.-->
+                    <input type="text" id="zip" name="zip" 
+                    pattern="[0-9]{5}" title="5-Digit US ZIP Code">
+                    
                 </div>
             </fieldset>
 
