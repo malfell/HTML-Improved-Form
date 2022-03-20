@@ -14,16 +14,24 @@
         <h2>Vacation Contest Sign-Up Form</h2>
         <form method="GET" action="results.html">
             <div>
+                <!--Marked First Name, Last Name, and email as required
+                and added an asterisk to the ends of the labels to make
+                them stand out better.-->
                 <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <span class="required-field">*</span>
+                <!--The minimum length for first/last names is 2 characters.
+                The maximum length is 35 characters.-->
+                <input type="text" minlength="2" maxlength="35" id="firstname" name="firstname" required>
                 <label for="lastname">Your Last Name</label>
-                <input type="text" id="lastname" name="lastname">
+                <span class="required-field">*</span>
+                <input type="text" minlength="2" maxlength="35" id="lastname" name="lastname" required>
             </div>
             <fieldset>
                 <legend>Your Contact Info</legend>
                 <div>
                     <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email">
+                    <span class="required-field">*</span>
+                    <input type="email" id="email" name="email" required>
                 </div>
                 <div>
                     <label for="address">Your Street Address</label>
